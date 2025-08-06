@@ -1,0 +1,22 @@
+{
+  "name": "actyme-platform",
+  "version": "1.0.0",
+  "description": "Next-generation engagement platform that rewards users for completing tasks with periodic prize draws",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd backend && npm run dev",
+    "client": "cd frontend && npm start",
+    "build": "cd frontend && npm run build",
+    "test": "cd backend && npm test && cd ../frontend && npm test",
+    "smoke-test": "cd backend && npm run smoke-test",
+    "storybook": "cd frontend && npm run storybook",
+    "install-deps": "cd backend && npm install && cd ../frontend && npm install"
+  },
+  "keywords": ["engagement", "rewards", "platform", "mern"],
+  "author": "Actyme Team",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
